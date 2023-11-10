@@ -129,3 +129,28 @@
 
 <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+</head>
+<body>
+<audio id="myAudio" controls>
+    <source src="sound05.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+<script>
+    // ページが読み込まれたら実行
+    window.onload = function() {
+        // オーディオ要素を取得
+        var audio = document.getElementById("myAudio");
+        // 再生したい音楽ファイルのパスを指定
+        audio.src = "sound05.mp3";
+        // 再生
+        audio.play();
+    };
+</script>
+</body>
+</html>
